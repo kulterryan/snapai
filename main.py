@@ -22,6 +22,7 @@
 """
 
 # Importing the required libraries
+import switch
 
 # Main
 def main():
@@ -33,6 +34,7 @@ def main():
   print("4. Image Restoration")
   opt_input = int(input("Enter your choice: "))
   print("You have chosen option: ", opt_input)
+  switch(opt_input)
   print("Hello World!")
 
 if __name__ == "__main__":
