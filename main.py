@@ -1,18 +1,23 @@
 """
 # Minor Project
-Project Name: SnapAI
-Team Members:
+
+# College: Oriental Institute of Science and Technology, Bhopal
+# Project Name: SnapAI
+
+# Branch: CSE-AIML
+# Semester: 6th
+# Team Members:
     1. Anushka Prajapati
     2. Aryan Chaurasia
     3. Pratyush Dixit
 
-Project Description:
+# Project Description:
 
-Project Features:
+# Project Features:
 
-Project Dependencies:
+# Project Dependencies:
 
-Project Files:
+# Project Files:
 
 """
 
