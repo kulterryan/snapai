@@ -35,7 +35,6 @@ def main():
   opt_input = int(input("Enter your choice: "))
   print("You have chosen option: ", opt_input)
   switch(opt_input)
-  print("Hello World!")
 
 if __name__ == "__main__":
   main()
