@@ -22,7 +22,7 @@
 """
 
 # Importing the required libraries
-import switch
+from switch import switch
 
 # Main
 def main():
