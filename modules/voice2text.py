@@ -2,6 +2,7 @@
 Voice 2 Text Generator Module
 """
 import whisper
+import torch
 
 model = whisper.load_model("base")
 
@@ -17,7 +18,7 @@ _, probs = model.detect_language(mel)
 print(f"Detected language: {max(probs, key=probs.get)}")
 
 # decode the audio
-options = whisper.DecodingOptions(fp16 = False)
+options = whisper.DecodingOptions(fp16 = torch.cuda.is_available())
 result = whisper.decode(model, mel, options)
 
 # print the recognized text
