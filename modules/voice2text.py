@@ -6,10 +6,10 @@ import torch
 
 model = whisper.load_model("base")
 
-def voice2text():
+def voice2text(path_rec):
   print("HIT: Voice to Text Generator")
   # load audio and pad/trim it to fit 30 seconds
-  audio = whisper.load_audio("recordings/recording.mp3")
+  audio = whisper.load_audio(path_rec)
   audio = whisper.pad_or_trim(audio)
 
   # make log-Mel spectrogram and move to the same device as the model
@@ -26,5 +26,5 @@ def voice2text():
   # print the recognized text
   return result.text
 
-# if __name__ == "__main__":
-#   print(voice2text())
+if __name__ == "__main__":
+  print(voice2text("recordings/recording.mp3"))

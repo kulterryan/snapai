@@ -3,7 +3,7 @@ Voice 2 Image Generator Module
 """
 
 # Importing Libraries
-import voice2text
+from modules import voice2text
 
 def voice2img(inp_voice):
   print("HIT: Voice to Image Generator")
