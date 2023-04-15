@@ -1,5 +1,3 @@
-import os
-
-# print(os.getcwd())
-
-f = open("modules/recording.mp3", "r")
+import torch
+print(torch.backends.cudnn.enabled)
+print(torch.cuda.is_available())
