@@ -1,12 +1,29 @@
 import os
 from dotenv import load_dotenv
 
+import replicate
+import requests
+
 load_dotenv()
 REPLICATE_API_TOKEN=os.getenv("REPLICATE_API_TOKEN")
 
-import replicate
-output = replicate.run(
+def imgrestoration(path_img):
+  print("STARTED: Image Restoration Module")
+  output = replicate.run(    
     "jingyunliang/swinir:660d922d33153019e8c263a3bba265de882e7f4f70396546b6c9c8f9d47a021a",
-    input={"image": open(r'C:\Users\Asus\Downloads\main-qimg-1f718d061c7444511cd1bcd80b6b53c4-lq.jpeg', "rb")}
-)
-print(output)
+    input={
+      "image": open(r'{}'.format(path_img),
+      "rb"
+    )}
+  )
+  
+  # Download Image
+  response = requests.get(output)
+  with open("images/output.png", "wb") as file:
+    file.write(response.content)
+  
+  print("Image Restoration Complete")
+  print("Output Image: images/output.png")
+  os.system(r"images\output.png")
+
+  return 0

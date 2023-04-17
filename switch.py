@@ -16,6 +16,6 @@ def switch(opt_input):
     case 3:
       img2txt()
     case 4:
-      imgrestoration()
+      imgrestoration("images/input.jpg")
     case _:
       print("Invalid Option")
