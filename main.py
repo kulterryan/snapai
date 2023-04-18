@@ -38,6 +38,7 @@ def main():
   print("2. Text to Image")
   print("3. Image to Text")
   print("4. Image Restoration")
+  print("5. Exit")
   opt_input = int(input("Enter your choice: "))
   print("You have chosen option: ", opt_input)
   
