@@ -24,6 +24,12 @@
 # Importing the required libraries
 from switch import switch
 
+# Importing the required libraries
+from modules.txt2img import txt2img
+from modules.voice2img import voice2img
+from modules.img2txt import img2txt
+from modules.imgrestoration import imgrestoration
+
 # Main
 def main():
   print("# Minor Project")
@@ -34,7 +40,22 @@ def main():
   print("4. Image Restoration")
   opt_input = int(input("Enter your choice: "))
   print("You have chosen option: ", opt_input)
-  switch(opt_input)
+  
+  # switch(opt_input)
+
+  # Switch Case
+  if opt_input == 1:
+    voice2img()
+  elif opt_input == 2:
+    user_prompt = input("Enter your prompt: ")
+    txt2img(user_prompt)
+  elif opt_input == 3:
+    img2txt()
+  elif opt_input == 4:
+    imgrestoration("images/input.jpg")
+  else:
+    print("Invalid Option")
+
 
 if __name__ == "__main__":
   main()

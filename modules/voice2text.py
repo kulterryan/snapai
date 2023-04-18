@@ -26,5 +26,5 @@ def voice2text(path_rec):
   # print the recognized text
   return result.text
 
-if __name__ == "__main__":
-  print(voice2text("recordings/recording.mp3"))
+# if __name__ == "__main__":
+#   print(voice2text("recordings/recording.mp3"))
