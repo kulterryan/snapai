@@ -13,7 +13,8 @@ def record_voice():
 
   # Start Recording
   print("STARTED: Voice Recorder")
+  print("Recording...")
+  print("Start Speaking...")
   sd.wait()
-
   # Save Recording
   wv.write("audio/recording.wav", recording, freq, sampwidth=2)
