@@ -38,11 +38,11 @@ def main():
   print("2. Text to Image")
   print("3. Image to Text")
   print("4. Image Restoration")
-  opt_input = int(input("Enter your choice: "))
+  opt_input = input("Enter your choice: ")
   print("You have chosen option: ", opt_input)
   
   # switch(opt_input)
-
+  
   # Switch Case
   if opt_input == 1:
     voice2img()
@@ -54,6 +54,9 @@ def main():
     img2txt(img_url)
   elif opt_input == 4:
     imgrestoration("images/input.jpg")
+  elif opt_input == 5:
+    print("Exiting...")
+    exit()
   else:
     print("Invalid Option")
 
