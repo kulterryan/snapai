@@ -160,4 +160,4 @@ cython_debug/
 #.idea/
 modules/test_aryn.py
 images/
-images/
+audio/
