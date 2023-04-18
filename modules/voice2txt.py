@@ -6,7 +6,7 @@ import torch
 
 model = whisper.load_model("base")
 
-def voice2text(path_rec):
+def voice2txt(path_rec):
   print("HIT: Voice to Text Generator")
   # load audio and pad/trim it to fit 30 seconds
   audio = whisper.load_audio(path_rec)
