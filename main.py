@@ -50,7 +50,8 @@ def main():
     user_prompt = input("Enter your prompt: ")
     txt2img(user_prompt)
   elif opt_input == 3:
-    img2txt()
+    img_url = input("Enter Image URL: ")
+    img2txt(img_url)
   elif opt_input == 4:
     imgrestoration("images/input.jpg")
   else:
