@@ -38,7 +38,7 @@ def main():
   print("2. Text to Image")
   print("3. Image to Text")
   print("4. Image Restoration")
-  opt_input = input("Enter your choice: ")
+  opt_input = int(input("Enter your choice: "))
   print("You have chosen option: ", opt_input)
   
   # switch(opt_input)
