@@ -7,12 +7,13 @@ freq = 44100
 # Recording duration
 duration = 10
 
-# Recording Settings
-recording = sd.rec(int(duration * freq), samplerate=freq, channels=2)
+def record_voice():  
+  # Recording Settings
+  recording = sd.rec(int(duration * freq), samplerate=freq, channels=2)
 
-# Start Recording
-print("STARTED: Voice Recorder")
-sd.wait()
+  # Start Recording
+  print("STARTED: Voice Recorder")
+  sd.wait()
 
-# Save Recording
-wv.write("audio/recording.wav", recording, freq, sampwidth=2)
+  # Save Recording
+  wv.write("audio/recording.wav", recording, freq, sampwidth=2)
